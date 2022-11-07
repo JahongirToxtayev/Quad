@@ -1,0 +1,76 @@
+.quad-ex_parentDiv{
+    width: 100%;
+    min-height: 750px;
+    background-image: url("../../../assets/Slice\ 3.png");
+    background-size: cover;
+    margin-top: 60px;
+}
+.quad-ex_childDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.quad-ex_img{
+    width: 50%;
+}
+.quad-ex_img>img{
+    width: 100%;
+    height: 90%;
+}
+.quad-ex_titleDiv{
+    width: 40%;
+    padding: 50px 10px;
+}
+.quad-ex_title{
+    color: #000;
+    text-align: center;
+    font-weight: 700;
+font-size: 50px;
+line-height: 70px;
+}
+.quad-ex_description>li{
+    font-weight: 700;
+    font-family: "Saira Semi Condensed";
+font-size: 40px;
+line-height: 50px;
+letter-spacing: 1.5px;
+color: #000;
+}
+.quad-ex_parentDiv2{
+    background-image: url("../../../assets/QuadExBg.png");
+    width: 100%;
+    min-height: 800px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.quad-ex-parent_textDiv{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(18%,1fr));
+    justify-content: space-around;
+    column-gap: 25px;
+    margin: 0 30px 50px 30px;
+}
+.quad-ex_textDiv>h4{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 35px;
+align-items: center;
+color: #000000;
+}
+.ex-icon{
+    font-size: 30px;
+    margin-bottom: 45px;
+}
+.quad-ex-titleDiv>h1{
+    font-family: 'Poppins';
+    width: 50%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    margin: 100px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,125 @@
+.products-div1 { grid-area: header; }
+.products-div2{ grid-area: menu; }
+.products-div3 { grid-area: main; }
+.products-div4 { grid-area: right; }
+.products-div5 { grid-area: footer; }
+
+.container-div{
+    background-image: url("../../assets/285989_original_4320x7680.jpg");
+    background-size: cover;
+    background-position: left;
+    padding: 30px 0;
+    filter: brightness(0.9);
+    margin-top: 60px;
+}
+.products-title{
+    text-shadow: 0px 6px 8px #000000;
+    font-weight: 400;
+    text-align: center;
+font-size: 45px;
+letter-spacing: 0.205em;
+color: #FFD700;
+
+}
+.products-parent_div {
+    width: 100%;
+    min-height: 700px;
+  display: grid;
+  grid-template-areas:
+    'header header menu menu main main'
+    'right right menu menu footer footer';
+  gap: 40px 40px;
+  padding: 50px;
+}
+.products-div{
+    border: 4px solid #636E72;
+    text-align: center;
+    background-color: #191919;
+    padding: 20px;
+    width: 430px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-tap-highlight-color: transparent;
+    z-index: 0;
+    transition: 1s;
+}
+.products-div::before, .products-div::after {
+    position: absolute;
+    background: #191919;
+    z-index: -1;
+    transition: 0.7s all ease;
+    content: '';
+  }
+  
+  .products-div::after {
+    width: 101.8%;
+    height: 170px;
+  }
+  .products-div::before {
+    height: 103.6%;
+    width: 240px;
+  }
+  .nft-hover::before{
+    height: 101.8%;
+    width: 240px;
+  }
+  .products-div:hover::before {
+    width: 0px;
+    background: #191919;
+  }
+  .products-div:hover::after {
+    height: 0px;
+    background: #191919;
+  }
+  .products-div:hover{
+    border: 4px solid #FFD700;
+  }
+
+.products-btn{
+    border: none;
+    background-color: #FFD700;
+    margin: 20px 0 10px 0;
+    width: 140px;
+    height: 50px;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 24px;
+    color: #191919;
+    font-family: "Saira Semi Condensed";
+}
+.products-btn:hover{
+    border: 5px solid #FFD700;
+    transition: 0.4s all ease-in-out;
+    color: #FFD700;
+    background-color: transparent;
+}
+.products-card_div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    width: 100%;
+}
+.products-icon{
+    color: #FFD700;
+    font-size: 100px;
+}
+.products-subtitle{
+    margin: 15px 0;
+    font-weight: 400;
+font-size: 30px;
+letter-spacing: 0.205em;
+color: #ffff;
+}
+.nft-word{
+    font-size:55px;
+}
+.products-description{
+    color: #ffff;
+    font-family: "Saira Semi Condensed";
+    font-size: 20px;
+    letter-spacing: -0.015em;
+    line-height: 30px;
+}

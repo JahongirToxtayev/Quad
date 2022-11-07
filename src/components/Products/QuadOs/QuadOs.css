@@ -1,0 +1,42 @@
+.quad-os_parentDiv{
+    width: 100%;
+    min-height: 750px;
+    background-image: url("../../../assets/Slice\ 3.png");
+    background-size: cover;
+    margin-top: 50px;
+}
+.quad-os_childDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.quad-os_img{
+    width: 53%;
+    margin-left: -100px;
+}
+.quad-os_img>img{
+    width: 100%;
+    height: 90%;
+}
+.quad-os_titleDiv{
+    width: 40%;
+    padding: 50px 10px;
+}
+.quad-os_title{
+    color: #ffff;
+    text-align: center;
+    font-weight: 700;
+font-size: 50px;
+line-height: 70px;
+}
+.quad-os_description>li{
+    font-weight: 700;
+    font-family: "Saira Semi Condensed";
+font-size: 36px;
+line-height: 60px;
+letter-spacing: 1.5px;
+color: #ffff;
+}
+.quad-os_description>li:nth-child(odd){
+    color: #FFC107;
+}
