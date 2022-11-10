@@ -4,6 +4,7 @@ import NFT1 from "../../../assets/NFT 1.png"
 import NFT2 from "../../../assets/NFT 2.png"
 import NFT3 from "../../../assets/NFT 3.png"
 import Navbar from '../../Navbar/NavbarAndFooter/Navbar/Navbar'
+import Footer from '../../Navbar/NavbarAndFooter/Footer/Footer'
 
 
 const NFT = () => {
@@ -50,6 +51,7 @@ const NFT = () => {
       </div>
 
     </div>
+    <Footer/>
     </>
   )
 }

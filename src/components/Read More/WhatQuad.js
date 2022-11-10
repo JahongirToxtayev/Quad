@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Navbar/NavbarAndFooter/Footer/Footer'
 import Navbar from '../Navbar/NavbarAndFooter/Navbar/Navbar'
 import "./style.css"
 
@@ -31,7 +32,8 @@ The total supply of QUAD, the native token of the Quadrium ecosystem, is 10,000,
         </p>
         </div>
         </div>
-        </div>    
+        </div>  
+        <Footer/>  
     </>
   )
 }

@@ -59,6 +59,11 @@ border: none;
 font-weight: 600;
 font-size: 18px;
 font-family: "Saira Semi Condensed";
+transition: 0.5s all ease-in;
+}
+.quads-btns_div .first-btn:hover{
+    background-color: #ffb805;
+    letter-spacing: 0.15em;
 }
 
 .what-quad_div{
@@ -173,7 +178,6 @@ border-bottom:8px solid #636E72;
 /*Swiper*/
 .swiper-parent_div{
   min-height: 90vh;
-  border-bottom: 8px solid #636E72;
   background-image: url("../../assets/swiper-bg.jpg");
   background-size: cover;
   padding: 70px 0;
@@ -252,73 +256,3 @@ letter-spacing: -0.015em;
     border-radius: 20px !important;
     color: #fff;
   }
-.footer-quad_img>img{
-    width: 66%;
-    height: 65%;
-    filter: drop-shadow(0px 2px 3px #999);
-
-}
-.footer-quad_img>h3{
-    margin-top: 10px;
-    font-size: 30px;
-    width: 75%;
-    text-align: center;
-    letter-spacing: 0.15em;
-    color: #FFD700;
-}
-.footer-parent_div{
-    width: 100%;
-    min-height: 80vh;
-    background-color: #191919;
-    padding: 100px 100px 0px 100px;
-}
-.footer-about_ul>li{
-color: #ffff;
-font-size: 20px;
-font-weight: 400;
-font-family: "Poppins";
-list-style: none;
-line-height:40px;
-}
-.footer-about{
-    letter-spacing: 0.15em;
-    color: #FFD700;
-    font-size: 25px;
-}
-.footer-about:hover{
-    color: #DF800F;
-}
-.social-links_parentDiv{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.social-links{
-display: flex;
-justify-content: space-around;
-align-items: center;
-width: 36%;
-}
-.footer-parent_div>h4{
-    font-size: 16px;
-    color: #999;
-    text-align: center;
-    font-family: "Poppins";
-    letter-spacing: 0.15em;
-margin-top: 70px;
-}
-.a{
-    text-decoration: none;
-    list-style: none;
-    color: #ffff;
-    font-size: 20px;
-font-weight: 400;
-font-family: "Poppins";
-}
-.a:hover{
-    color: #DF800F;
-}
-.social-icon{
-    font-size: 45px;
-    color: #FFD700;
-}

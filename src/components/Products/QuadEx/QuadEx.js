@@ -3,6 +3,7 @@ import "./QuadEx.css"
 import QuadExImg from "../../../assets/QuadEX.png"
 import Navbar from '../../Navbar/NavbarAndFooter/Navbar/Navbar'
 import {BsFillArrowDownSquareFill} from "react-icons/bs"
+import Footer from '../../Navbar/NavbarAndFooter/Footer/Footer'
 
 const QuadEx = () => {
   return (
@@ -54,7 +55,7 @@ const QuadEx = () => {
         </div>
     </div>
 </div>
-
+    <Footer/>
     </>
   )
 }

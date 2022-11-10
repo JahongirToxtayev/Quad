@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../Navbar/NavbarAndFooter/Footer/Footer'
 import Navbar from '../Navbar/NavbarAndFooter/Navbar/Navbar'
 import "./style.css"
 
@@ -31,7 +32,8 @@ implementation of the work on the road map set by the company</li>
         </p>
         </div>
         </div>
-        </div>    
+        </div> 
+        <Footer/>   
     </div>
   )
 }

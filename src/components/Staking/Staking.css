@@ -1,0 +1,19 @@
+.staking-parentDiv{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    background-image: url("../../assets/readMore-quad.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+.staking-childDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40vh;
+    background-color: #191919;
+    border-bottom:8px solid #636E72;
+    border-top:8px solid #636E72;
+}

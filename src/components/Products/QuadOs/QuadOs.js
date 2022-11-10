@@ -2,6 +2,7 @@ import React from 'react'
 import "./QuadOs.css"
 import QuadOsImg from "../../../assets/8DE8007A4C79476B.png"
 import Navbar from '../../Navbar/NavbarAndFooter/Navbar/Navbar'
+import Footer from '../../Navbar/NavbarAndFooter/Footer/Footer'
 
 const QuadOs = () => {
   return (
@@ -25,6 +26,7 @@ const QuadOs = () => {
 
         </div>
     </div>
+    <Footer/>
     </>
   )
 }

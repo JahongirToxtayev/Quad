@@ -6,12 +6,11 @@ import Chart from "react-apexcharts";
 import Navbar from './NavbarAndFooter/Navbar/Navbar';
 import { Swiper, SwiperSlide } from "swiper/react";
 import {Link} from "react-router-dom"
-import {RiAdvertisementFill,RiTeamFill,RiInstagramFill} from "react-icons/ri"
+import {RiAdvertisementFill,RiTeamFill} from "react-icons/ri"
 import {GrDiamond} from "react-icons/gr"
 import {MdMovieFilter} from "react-icons/md"
-import {FaCartArrowDown,FaTelegramPlane} from "react-icons/fa"
-import {BsClipboardData,BsTwitter} from "react-icons/bs"
-import {SiGmail} from "react-icons/si"
+import {FaCartArrowDown} from "react-icons/fa"
+import {BsClipboardData} from "react-icons/bs"
 import AOS from 'aos';
 import "aos";
 import "aos/dist/aos.css";
@@ -23,6 +22,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectCoverflow, Pagination,Autoplay} from "swiper";
+import Footer from './NavbarAndFooter/Footer/Footer';
 
 
 let pieChartData={
@@ -182,22 +182,22 @@ const Main = () => {
         <SwiperSlide className='swiper-slide'>
           <div className="card shadow swiper-card">
             <div className="swiper-img_div">
-                <RiAdvertisementFill className="swiper-icon"/>
+                <GrDiamond className="swiper-icon"/>
             </div>
             <div className="body-card swiper-body_card">
-                <h4>Walpaper Advertising</h4>
-                <p className='text-center'>Use our Ad Manager to place wallpaper ads (2560x1440px) in your country or region and reach hundreds of thousands of Quadrium users with your business.</p>
+            <h4>Premium Services</h4>
+                <p className='text-center'>As a Business or Premium user, you enjoy valuable security features. They guarantee the authenticity and integrity of sensitive company data. With the new Quadrium 3.0, you get unlimited file transfer and storage capabilities. Still, you can also time-stamp your data via publicly verifiable proof and share it with your customers or co-workers via the decentralized network you define.</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide className='swiper-slide'>
           <div className="card shadow swiper-card">
             <div className="swiper-img_div">
-                <GrDiamond className="swiper-icon"/>
+                <RiAdvertisementFill className="swiper-icon"/>
             </div>
             <div className="body-card swiper-body_card">
-                <h4>Premium Services</h4>
-                <p className='text-center'>As a Business or Premium user, you enjoy valuable security features. They guarantee the authenticity and integrity of sensitive company data. With the new Quadrium 3.0, you get unlimited file transfer and storage capabilities. Still, you can also time-stamp your data via publicly verifiable proof and share it with your customers or co-workers via the decentralized network you define.</p>
+            <h4>Walpaper Advertising</h4>
+                <p className='text-center'>Use our Ad Manager to place wallpaper ads (2560x1440px) in your country or region and reach hundreds of thousands of Quadrium users with your business.</p>
             </div>
           </div>
         </SwiperSlide>
@@ -249,84 +249,7 @@ const Main = () => {
             </div>
                 </div>
 
-                <div className="footer-parent_div">
-                  <div className="footer-child_div row">
-                    <div className="col-lg-3 footer-quad_img">
-                      <img src={QuadImg} alt="" />
-                      <h3>Quadrium Company</h3>
-                    </div>
-                    <div className="col-lg-3">
-                      <ul className='footer-about_ul'>
-                        <a  className='a' href="#about">
-                        <li > <span className='footer-about'>About</span> </li>
-                        </a>
-                          <a className='a' href="#about">
-                        <li>Company</li>
-                          </a>
-                        <li>Whitepaper</li>
-                        <Link className='a' to="/what-quad">
-                        <li>What is Quad?</li>
-                        </Link>
-                        <Link className='a' to="/what-our-goal">
-                        <li>What is our goal?</li>
-                        </Link>
-                      </ul>
-                    </div>
-
-                    <div className="col-lg-3">
-                      <ul className='footer-about_ul'>
-                        <Link className='a' to="/Staking">
-                        <li > <span className='footer-about'>Staking</span> </li>
-                        </Link>
-                        <Link className='a' to="/Roadmap">
-                        <li > <span className='footer-about'>Roadmap</span> </li>
-                        </Link>
-                      </ul>
-                    </div>
-
-                    <div className="col-lg-3">
-                      <ul className='footer-about_ul'>
-                      <Link className='a' to="/Products">
-                        <li > <span className='footer-about'>Products</span> </li>
-                        </Link>
-                        <Link className='a' to="/Products/QuadWallet">
-                        <li>Quad Wallet</li>
-                        </Link>
-                        <Link className='a' to="/Products/QuadEx">
-                        <li>Quad Ex</li>
-                        </Link>
-                        <Link className='a' to="/Products/NFT">
-                        <li>NFT Marketplace</li>
-                        </Link>
-                        <Link className='a' to="/Products/QuadOs">
-                        <li>Quad Os</li>
-                        </Link>
-                        <Link className='a' to="/Products/QuadPay">
-                        <li>Quad Pay</li>
-                        </Link>
-
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div className="social-links_parentDiv">
-                    <div className="social-links">
-                      <a className='a' href="https://instagram.com/quadrium_company?igshid=NDc0ODY0MjQ=">
-                          <RiInstagramFill className='social-icon'/>
-                      </a>
-                      <a className='a' href="https://t.me/QuadriumCompany">
-                          <FaTelegramPlane className='social-icon'/>
-                      </a>
-                      <a className='a' href="">
-                          <BsTwitter className='social-icon'/>
-                      </a>
-                      <a className='a' href="">
-                          <SiGmail className='social-icon'/>
-                      </a>
-                    </div>
-                  </div>
-                  <h4>All Rights Reserved<sup style={{fontSize:"20px"}}>&reg;</sup></h4>
-                </div>
+                <Footer/>
 
             
             

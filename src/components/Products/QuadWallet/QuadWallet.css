@@ -4,6 +4,7 @@
     background-image: url("../../../assets/Slice\ 2.png");
     background-size: cover;
     margin-top: 60px;
+    padding: 30px;
 }
 .quad-wallet_childDiv{
     display: flex;

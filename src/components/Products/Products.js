@@ -9,6 +9,7 @@ import Navbar from '../Navbar/NavbarAndFooter/Navbar/Navbar'
 import AOS from 'aos';
 import "aos";
 import "aos/dist/aos.css";
+import Footer from '../Navbar/NavbarAndFooter/Footer/Footer'
 
 
 
@@ -74,6 +75,7 @@ const Products = () => {
         </div>
         </div>
       </div>
+      <Footer/>
     </div>
   )
 }

@@ -17,7 +17,7 @@ const Navbar = () => {
             </div>
             <div className="navbar-middle_textDiv ms-5">
       <Link to={"/"} className="nav-text" >Home</Link>
-      <Link to={"/"} className="nav-text" >Company</Link>
+      <a href="/#about" className="nav-text" >Company</a>
       <Link to={"/Staking"} className="nav-text" >Staking</Link>
       <Link to={"/Roadmap"} className="nav-text" >Roadmap</Link>
       <Link to={"/Products"} className="nav-text" >Products</Link>
