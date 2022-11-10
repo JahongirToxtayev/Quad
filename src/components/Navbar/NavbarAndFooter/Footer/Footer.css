@@ -32,9 +32,6 @@ line-height:40px;
     color: #FFD700;
     font-size: 25px;
 }
-.footer-about:hover{
-    color: #DF800F;
-}
 .social-links_parentDiv{
     width: 100%;
     display: flex;

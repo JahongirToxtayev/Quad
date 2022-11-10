@@ -26,7 +26,9 @@ const Footer = () => {
                           <a className='a' href="#about">
                         <li>Company</li>
                           </a>
+                        <a className='a' href="">
                         <li>Whitepaper</li>
+                        </a>
                         <Link className='a' to="/what-quad">
                         <li>What is Quad?</li>
                         </Link>
