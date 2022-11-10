@@ -170,4 +170,155 @@ border-bottom:8px solid #636E72;
 }
 /*Tokenomics/////*/
 
+/*Swiper*/
+.swiper-parent_div{
+  min-height: 90vh;
+  border-bottom: 8px solid #636E72;
+  background-image: url("../../assets/swiper-bg.jpg");
+  background-size: cover;
+  padding: 70px 0;
+}
+.swiper-card{
+transition: all 0.5s ease;
+border: none;
+width: 100%;
+display: block;
+padding: 20px;
+min-height: 500px;
+background: linear-gradient(45deg, #FFD700 43.61%, #DF800F 97.78%);
+}
+.swiper-img_div{
+    margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.5s ease;
 
+}
+.full-width{
+    width: 100%;
+}
+.center{
+    max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.swiper {
+    width: 100%;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px !important;
+    min-height: 250px !important;
+  }
+  .swiper-icon{
+    font-size: 120px;
+  }
+  
+
+  .swiper-title{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 60px;
+text-align: center;
+letter-spacing: -0.06em;
+color: #FFFFFF;
+  }
+  .swiper-body_card>h4{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 10px 0 15px 0;
+    text-align: center;
+    letter-spacing: -0.06em;
+  }
+  .swiper-body_card>p{
+    font-family: 'Saira Semi Condensed';
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+letter-spacing: -0.015em;
+  }
+  .swiper-pagination-bullet{
+    background: #FFD700 !important;
+    padding: 10px !important;
+    border-radius: 20px !important;
+    color: #fff;
+  }
+.footer-quad_img>img{
+    width: 66%;
+    height: 65%;
+    filter: drop-shadow(0px 2px 3px #999);
+
+}
+.footer-quad_img>h3{
+    margin-top: 10px;
+    font-size: 30px;
+    width: 75%;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #FFD700;
+}
+.footer-parent_div{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #191919;
+    padding: 100px 100px 0px 100px;
+}
+.footer-about_ul>li{
+color: #ffff;
+font-size: 20px;
+font-weight: 400;
+font-family: "Poppins";
+list-style: none;
+line-height:40px;
+}
+.footer-about{
+    letter-spacing: 0.15em;
+    color: #FFD700;
+    font-size: 25px;
+}
+.footer-about:hover{
+    color: #DF800F;
+}
+.social-links_parentDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.social-links{
+display: flex;
+justify-content: space-around;
+align-items: center;
+width: 36%;
+}
+.footer-parent_div>h4{
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+    font-family: "Poppins";
+    letter-spacing: 0.15em;
+margin-top: 70px;
+}
+.a{
+    text-decoration: none;
+    list-style: none;
+    color: #ffff;
+    font-size: 20px;
+font-weight: 400;
+font-family: "Poppins";
+}
+.a:hover{
+    color: #DF800F;
+}
+.social-icon{
+    font-size: 45px;
+    color: #FFD700;
+}

@@ -49,7 +49,7 @@ color: #000;
     grid-template-columns: repeat(auto-fit,minmax(18%,1fr));
     justify-content: space-around;
     column-gap: 25px;
-    margin: 0 30px 50px 30px;
+    margin: 0 30px auto;
 }
 .quad-ex_textDiv>h4{
     font-family: 'Poppins';
@@ -62,7 +62,7 @@ color: #000000;
 }
 .ex-icon{
     font-size: 30px;
-    margin-bottom: 45px;
+    margin: 28px 0 40px 0;
 }
 .quad-ex-titleDiv>h1{
     font-family: 'Poppins';

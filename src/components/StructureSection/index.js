@@ -1,12 +1,20 @@
-import React from 'react';
+import {React,useEffect} from 'react';
 import "./style.css"
 import icon1 from "../../assets/icons/img.png"
 import {RiGalleryFill,RiSecurePaymentFill} from "react-icons/ri"
 import {GiTwoCoins} from "react-icons/gi"
 import {FaChartLine} from "react-icons/fa"
+import AOS from 'aos';
+import "aos";
+import "aos/dist/aos.css";
 
 
 function Index() {
+    useEffect(() => {
+        AOS.init({
+            duration:1000
+        });
+    }, [])
 
     return (
             <div className="structure-parentDiv">
@@ -15,8 +23,8 @@ function Index() {
                 </div>
                 <div className="container">
                     <div className="row">
-                        <div className=" col-md-4 column1">
-                            <div className="info">
+                        <div className=" col-md-4 column1" >
+                            <div className="info" data-aos={"fade-right"}>
                                 <div className="left d-flex flex-column justify-content-center">
                                     <img className="icon" src={icon1} alt="icon"/>
                                     <h4>DeFi</h4>
@@ -26,8 +34,8 @@ function Index() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-4  column2">
-                            <div className="info">
+                        <div className="col-md-4  column2" >
+                            <div className="info" data-aos={"fade-right"}>
                                 <div className="left d-flex flex-column justify-content-center me-2">
                                     <FaChartLine className='structure-icon'/>
                                     <h4>DEX & CEX</h4>
@@ -36,7 +44,7 @@ function Index() {
                                     <p>Quadswap and QuadEX are the Quadrium company's flagship products in these areas and will drive QUAD's growth</p>
                                 </div>
                             </div>
-                            <div className="info">
+                            <div className="info" data-aos={"fade-right"}>
                                 <div className="left d-flex flex-column justify-content-center nft me-2">
                                     <RiGalleryFill className='structure-icon'/>
                                     <h4>NFT Marketplace</h4>
@@ -47,7 +55,7 @@ function Index() {
                             </div>
                         </div>
                         <div className="col-md-4  column3">
-                            <div className="info">
+                            <div className="info" data-aos={"fade-right"}>
                                 <div className="left d-flex flex-column justify-content-center me-4">
                                     <GiTwoCoins className='structure-icon'/>
                                     <h4>Payments</h4>
@@ -56,7 +64,7 @@ function Index() {
                                     <p>QuadPay is a new generation payment system that complements the DeFi system based on blockchain protocolsn</p>
                                 </div>
                             </div>
-                            <div className="info">
+                            <div className="info" data-aos={"fade-right"}>
                                 <div className="left d-flex flex-column justify-content-center me-2">
                                     <RiSecurePaymentFill className='structure-icon'/>
                                     <h4>Web 3.0</h4>

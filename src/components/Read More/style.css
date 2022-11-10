@@ -1,0 +1,29 @@
+.read-more_quadParentDiv{
+    margin-top: 60px;
+    padding: 20px 50px 60px 50px;
+    background-image: url("../../assets/readMore-quad.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+.what-quadTitle{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 50px;
+line-height: 60px;
+text-align: center;
+letter-spacing: 0.17em;
+margin: 50px 0;
+color: #FFFFFF;
+}
+.read-more_quadChildDiv{
+background: linear-gradient(45deg, #191919 50.61%, #FFC107 93.78%);
+padding: 40px;
+width: 80%;
+min-height: 70vh;
+border: 8px solid #636E72;
+}
+.what-our-goal_parentDiv{
+    background-image: url("../../assets/what-our-goal.jpg");
+}

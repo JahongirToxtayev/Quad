@@ -26,8 +26,8 @@ const Navbar = () => {
         </div>
         <div className="right-component">
             <div className="nav-btns me-4">
-                <button className='btn btn-outline-warning mx-2'>Log In</button>
-                <button className='btn btn-warning mx-2'>Register</button>
+                <button className='btn btn-outline-warning mx-2' disabled>Log In</button>
+                <button className='btn btn-warning mx-2' disabled>Register</button>
 
             </div>
         </div>
