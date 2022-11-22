@@ -23,7 +23,6 @@ import "swiper/css/pagination";
 
 // import required modules
 import { EffectCoverflow, Pagination,Autoplay} from "swiper";
-import Sidebar from "./Sidebar/Sidebar";
 
 
 let pieChartData={
@@ -49,7 +48,6 @@ const Main = () => {
     <>
     <div >
         <Navbar/>
-        <Sidebar />
         <div className="quads-parent_div">
 
             <div className="quads-title_backDiv">
@@ -72,7 +70,7 @@ const Main = () => {
             <div className="what-quad_textParent col-7" id='about'>
             <div className="what-quad_textDiv p-4" data-aos={"zoom-out-down"}>
                 <h4 className='what-quad_subtitle'>Quadrium Blockchain Ecosystem</h4>
-                <h3 className='what-quad_title'>What is Quadrium (<span className='text-warning'>QUAD</span>)?</h3>
+                <h3 className='what-quad_title'>What is Quadrium(<span className='text-warning'>QUAD</span>)?</h3>
                 <p className='what-quad_text'>Quadrium (QUAD) is a utility token of the Quadrium company, and this token is one of the main elements of the company's ecosystem. This token is a digital share by nature, by purchasing it you become a part of the company and one of its owners.</p>
             </div>
             <div className="what-quad_btnDiv">
@@ -81,11 +79,12 @@ const Main = () => {
                 </Link>
             </div>
             </div>
+            
         </div>
 
     <div className="what-goal_parentDiv row g-0 p-5">
         <div className="what-goal_childDiv col-lg-6 col-12" data-aos={"zoom-out-right"}>
-            <h4>What is our <span className='text-warning'>goal</span>?</h4>
+            <h4>What is our <span className='text-warning'>goal</span> ?</h4>
             <p>Quadrium (QUAD) is a utility token of the Quadrium company, and this token is one of the main elements of the company's ecosystem. This token is a digital share by nature, by purchasing it you become a part of the company and one of its owners.</p>
                 <Link to={"/what-our-goal"}>
             <button className='what-quad_btn'>Read More</button>
@@ -96,11 +95,11 @@ const Main = () => {
     <StructureSection />
 
     <div className="pie-chart">
-                <Chart
+                <Chart 
                 type="pie"
                 height={580}
-                series={ pieChartData.series}
-
+                series={ pieChartData.series}            
+                
                 options={{
                     chart: {
                         width:"100%",
@@ -122,7 +121,7 @@ const Main = () => {
                           fontFamily:  "Poppins",
                           color:  '#FFD700'
                         },
-                    },
+                    }, 
                     dataLabels:{
                         enabled:true,
                         style: {
@@ -133,7 +132,7 @@ const Main = () => {
                     legend:{
                         // position:"bottom",
                         offsetY:130,
-      horizontalAlign: 'center',
+      horizontalAlign: 'center', 
       floating: false,
       fontSize: '18px',
       fontFamily: 'Saira Semi Condensed',
@@ -147,10 +146,10 @@ const Main = () => {
                         },
                     },
                        colors:["#FFD700","#A9BE1B","#629E33","#2A7B3D","#00563B","#006158"],
-                      labels:pieChartData.labels
+                      labels:pieChartData.labels                  
 
                  }}
-
+                 
                 >
                 </Chart>
             </div>

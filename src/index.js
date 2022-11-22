@@ -14,25 +14,26 @@ import QuadWallet from './components/Products/QuadWallet/QuadWallet';
 import NFT from './components/Products/Nft/NFT';
 import { WhatQuad } from './components/Read More/WhatQuad';
 import { WhatOurGoal } from './components/Read More/WhatOurGoal';
-import {SidebarProvider} from "./context/sidebar_context";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-    <SidebarProvider>
-      <Routes>
-        <Route path='/' element={<App/>}/>
-        <Route path='/Roadmap' element={<Roadmap/>}/>
-        <Route path='/Products' element={<Products/>}/>
-        <Route path='/Staking' element={<Staking/>}/>
-        <Route path='/Products/QuadOs' element={<QuadOs/>}/>
-        <Route path='/Products/QuadEx' element={<QuadEx/>}/>
-        <Route path='/Products/QuadPay' element={<QuadPay/>}/>
-        <Route path='/Products/QuadWallet' element={<QuadWallet/>}/>
-        <Route path='/Products/NFT' element={<NFT/>}/>
-        <Route path='/what-quad' element={<WhatQuad/>}/>
-        <Route path='/what-our-goal' element={<WhatOurGoal/>}/>
-      </Routes>
-    </SidebarProvider>
+  <Routes>
+    <Route path='/' element={<App/>}/>
+    <Route path='/Roadmap' element={<Roadmap/>}/>
+    <Route path='/Products' element={<Products/>}/>
+    <Route path='/Staking' element={<Staking/>}/>
+    <Route path='/Products/QuadOs' element={<QuadOs/>}/>
+    <Route path='/Products/QuadEx' element={<QuadEx/>}/>
+    <Route path='/Products/QuadPay' element={<QuadPay/>}/>
+    <Route path='/Products/QuadWallet' element={<QuadWallet/>}/>
+    <Route path='/Products/NFT' element={<NFT/>}/>
+    <Route path='/what-quad' element={<WhatQuad/>}/>
+    <Route path='/what-our-goal' element={<WhatOurGoal/>}/>
+
+
+
+
+  </Routes>
   </BrowserRouter>
 );
 

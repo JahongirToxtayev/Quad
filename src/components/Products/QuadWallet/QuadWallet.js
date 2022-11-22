@@ -2,6 +2,7 @@ import React from 'react'
 import "./QuadWallet.css"
 import WalletImg from "../../../assets/wallet.png"
 import Navbar from '../../Navbar/NavbarAndFooter/Navbar/Navbar'
+import Footer from '../../Navbar/NavbarAndFooter/Footer/Footer'
 
 const QuadWallet = () => {
   return (
@@ -26,6 +27,7 @@ const QuadWallet = () => {
 
         </div>
     </div>
+    <Footer/>
     </>
   )
 }

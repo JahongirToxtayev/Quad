@@ -1,5 +1,6 @@
 import React from 'react'
 import PayImg from "../../../assets/pngegg.png"
+import Footer from '../../Navbar/NavbarAndFooter/Footer/Footer'
 import Navbar from '../../Navbar/NavbarAndFooter/Navbar/Navbar'
 import "./QuadPay.css"
 
@@ -25,6 +26,7 @@ const QuadPay = () => {
 
         </div>
     </div>
+    <Footer/>
     </>
   )
 }
