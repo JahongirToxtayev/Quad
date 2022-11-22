@@ -70,7 +70,7 @@ function Index() {
                                     <h4>Web 3.0</h4>
                                 </div>
                                 <div className="right">
-                                    <p>QuadOS is a multifunctional blockchain operating system, the main task of which is to process large amounts of information and algorithmically convert them into computer programs</p>
+                                    <p style={{marginTop: "1rem"}}>QuadOS is a multifunctional blockchain operating system, the main task of which is to process large amounts of information and algorithmically convert them into computer programs</p>
                                 </div>
                             </div>
                         </div>

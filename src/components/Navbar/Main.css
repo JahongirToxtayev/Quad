@@ -322,3 +322,240 @@ font-family: "Poppins";
     font-size: 45px;
     color: #FFD700;
 }
+
+/*Responsive*/
+
+@media (max-width: 1320px) and (min-width: 1200px){
+    .what-quad_textDiv{
+        width: 650px;
+    }
+    .what-quad_subtitle{
+        font-size: 20px;
+    }
+    .what-quad_title{
+        font-size: 30px;
+    }
+    .what-quad_text{
+        font-size: 20px;
+    }
+    .what-quad_img > img{
+        height: 60%;
+        width: 60%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 1100px){
+    .what-quad_textDiv{
+        width: 600px;
+    }
+    .what-quad_subtitle{
+        font-size: 19px;
+    }
+    .what-quad_title{
+        font-size: 26px;
+    }
+    .what-quad_text{
+        font-size: 19px;
+    }
+    .what-quad_img > img{
+        height: 60%;
+        width: 60%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 1100px) and (min-width: 950px){
+    .what-quad_textDiv{
+        width: 500px;
+    }
+    .what-quad_subtitle{
+        font-size: 18px;
+    }
+    .what-quad_title{
+        font-size: 24px;
+    }
+    .what-quad_text{
+        font-size: 18px;
+    }
+    .what-quad_img > img{
+        height: 60%;
+        width: 60%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 850px){
+    .what-quad_textDiv{
+        width: 460px;
+    }
+    .what-quad_subtitle{
+        font-size: 17px;
+    }
+    .what-quad_title{
+        font-size: 22px;
+    }
+    .what-quad_text{
+        font-size: 17px;
+    }
+    .what-quad_img > img{
+        height: 46%;
+        width: 60%;
+        margin-top: 50px;
+    }
+}
+
+
+
+@media (max-width: 850px) and (min-width: 556px){
+    .what-quad_textParent{
+        width: auto!important;
+    }
+    .what-quad_textDiv{
+        width: 100%;
+        height: auto;
+    }
+    .what-quad_subtitle{
+        font-size: 19px;
+    }
+    .what-quad_title{
+        font-size: 25px;
+    }
+    .what-quad_text{
+        font-size: 19px;
+    }
+    .what-quad_img{
+        display: none;
+    }
+}
+
+
+@media (max-width: 556px){
+    .what-quad_title{
+        font-size: 22px;
+    }
+    .what-quad_div{
+        padding: 0!important;
+    }
+    .what-quad_textParent{
+        width: auto!important;
+        padding: 2rem!important;
+    }
+    .what-quad_textDiv{
+        height: auto;
+        width: 100%;
+    }
+    .what-quad_btn{
+        font-size: 18px;
+        width: 120px;
+        height: 40px;
+    }
+    .what-quad_img{
+        display: none;
+    }
+
+}
+@media (max-width: 425px){
+    .what-quad_textParent{
+        width: auto!important;
+    }
+    .what-quad_subtitle{
+        font-size: 17px;
+    }
+    .what-quad_title{
+        font-size: 20px;
+    }
+    .what-quad_text{
+        font-size: 17px;
+    }
+    .what-quad_img{
+        display: none;
+    }
+    .quads-title{
+        font-size: 40px;
+    }
+    .quads-subtitle{
+        font-size: 17px;
+    }
+    .quads-btns_div .first-btn, .what-quad_btn{
+        width: 120px;
+        height: 30px;
+        font-size: 12px;
+    }
+    .sidebar-header .navbar-title{
+        margin-top: 2px;
+    }
+}
+
+
+
+
+@media (max-width: 768px) and (min-width: 425px){
+    .quads-title{
+        font-size: 50px;
+    }
+    .quads-subtitle{
+        font-size: 20px;
+    }
+    .quads-btns_div .first-btn, .what-quad_btn{
+        width: 160px;
+        height: 35px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 320px) {
+    .what-quad_subtitle{
+        font-size: 16px;
+    }
+    .what-quad_title{
+        font-size: 18px;
+    }
+    .what-quad_text{
+        font-size: 16px;
+    }
+}
+
+/*What goal section's responsive*/
+
+@media (max-width: 1200px){
+    .what-goal_childDiv p{
+        width: 500px;
+    }
+}
+
+@media (max-width: 950px) and (min-width: 768px){
+    .what-goal_childDiv h4{
+        font-size: 30px;
+    }
+    .what-goal_childDiv p{
+        font-size: 22px;
+        width: 400px;
+    }
+    .what-goal_parentDiv{
+        background-position: left;
+    }
+}
+
+@media (max-width: 768px){
+    .what-goal_childDiv h4{
+        font-size: 27px;
+    }
+    .what-goal_childDiv p{
+        font-size: 20px;
+        width: 370px;
+    }
+    .what-goal_parentDiv{
+        background-position: left;
+    }
+}
+
+@media (max-width: 425px){
+    .what-goal_childDiv h4{
+        font-size: 26px;
+    }
+    .what-goal_childDiv p{
+        font-size: 18px;
+        width: auto;
+    }
+}
