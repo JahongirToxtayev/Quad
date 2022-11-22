@@ -1,9 +1,11 @@
 import React from 'react'
+import {FormattedMessage } from 'react-intl'
 import { Link } from 'react-router-dom'
 import LogoImg from "../../../../assets/Group 1.png"
 import "./Navbar.css"
 
-const Navbar = () => {
+const Navbar = ({locale,handleChange}) => {
+
   return (
     <>
     <div className="navbar-parent_div">
@@ -16,18 +18,41 @@ const Navbar = () => {
         <h3 className='navbar-title'>Quad</h3>
             </div>
             <div className="navbar-middle_textDiv ms-5">
-      <Link to={"/"} className="nav-text" >Home</Link>
-      <a href="/#about" className="nav-text" >Company</a>
+      <Link to={"/"} className="nav-text" ><FormattedMessage
+                id='navbarHome'
+                value={{locale}}>
+                </FormattedMessage></Link>
+      <a href="/#about" className="nav-text" ><FormattedMessage
+                id='navbarCompany'
+                value={{locale}}>
+                </FormattedMessage></a>
       <Link to={"/Staking"} className="nav-text" >Staking</Link>
-      <Link to={"/Roadmap"} className="nav-text" >Roadmap</Link>
-      <Link to={"/Products"} className="nav-text" >Products</Link>
+      <Link to={"/Roadmap"} className="nav-text" ><FormattedMessage
+                id='navbarRoadMap'
+                value={{locale}}>
+                </FormattedMessage></Link>
+      <Link to={`/Products/${locale}`} className="nav-text" ><FormattedMessage
+                id='navbarProducts'
+                value={{locale}}>
+                </FormattedMessage></Link>
             </div>
             </nav>
         </div>
         <div className="right-component">
             <div className="nav-btns me-4">
-                <button className='btn btn-outline-warning mx-2' disabled>Log In</button>
-                <button className='btn btn-warning mx-2' disabled>Register</button>
+                <select onChange={handleChange} defaultValue={locale}>
+                    {["en","uz"].map((v,i)=>(
+                        <option key={i}>{v}</option>
+                    ))}
+                </select>
+                <button className='btn btn-outline-warning mx-2' disabled><FormattedMessage
+                id='logIn'
+                value={{locale}}>
+                </FormattedMessage></button>
+                <button className='btn btn-warning mx-2' disabled><FormattedMessage
+                id='register'
+                value={{locale}}>
+                </FormattedMessage></button>
 
             </div>
         </div>

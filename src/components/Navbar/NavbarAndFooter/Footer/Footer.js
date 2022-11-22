@@ -6,10 +6,11 @@ import QuadImg from "../../../../assets/Slice_1-removebg-preview.png"
 import {RiInstagramFill} from "react-icons/ri"
 import {FaTelegramPlane} from "react-icons/fa"
 import {BsTwitter} from "react-icons/bs"
+import { FormattedMessage } from 'react-intl'
 
 
 
-const Footer = () => {
+const Footer = ({locale}) => {
   return (
     <>
     <div className="footer-parent_div">
@@ -20,20 +21,32 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-3">
                       <ul className='footer-about_ul'>
-                        <a  className='a' href="#about">
-                        <li > <span className='footer-about'>About</span> </li>
-                        </a>
+                        <Link  className='a' to="/">
+                        <li > <span className='footer-about'><FormattedMessage
+                id='navbarHome'
+                value={{locale}}>
+                </FormattedMessage></span> </li>
+                        </Link>
                           <a className='a' href="#about">
-                        <li>Company</li>
+                        <li><FormattedMessage
+                id='navbarCompany'
+                value={{locale}}>
+                </FormattedMessage></li>
                           </a>
                         <a className='a' href="">
                         <li>Whitepaper</li>
                         </a>
                         <Link className='a' to="/what-quad">
-                        <li>What is Quad?</li>
+                        <li><FormattedMessage
+                id='footerWhatQuad'
+                value={{locale}}>
+                </FormattedMessage></li>
                         </Link>
                         <Link className='a' to="/what-our-goal">
-                        <li>What is our goal?</li>
+                        <li><FormattedMessage
+                id='footerWhatGoal'
+                value={{locale}}>
+                </FormattedMessage></li>
                         </Link>
                       </ul>
                     </div>
@@ -44,7 +57,10 @@ const Footer = () => {
                         <li > <span className='footer-about'>Staking</span> </li>
                         </Link>
                         <Link className='a' to="/Roadmap">
-                        <li > <span className='footer-about'>Roadmap</span> </li>
+                        <li > <span className='footer-about'><FormattedMessage
+                id='navbarRoadMap'
+                value={{locale}}>
+                </FormattedMessage></span> </li>
                         </Link>
                       </ul>
                     </div>
@@ -52,16 +68,25 @@ const Footer = () => {
                     <div className="col-lg-3">
                       <ul className='footer-about_ul'>
                       <Link className='a' to="/Products">
-                        <li > <span className='footer-about'>Products</span> </li>
+                        <li > <span className='footer-about'><FormattedMessage
+                id='navbarProducts'
+                value={{locale}}>
+                </FormattedMessage></span> </li>
                         </Link>
                         <Link className='a' to="/Products/QuadWallet">
-                        <li>Quad Wallet</li>
+                        <li><FormattedMessage
+                id='footerWallet'
+                value={{locale}}>
+                </FormattedMessage></li>
                         </Link>
                         <Link className='a' to="/Products/QuadEx">
                         <li>Quad Ex</li>
                         </Link>
                         <Link className='a' to="/Products/NFT">
-                        <li>NFT Marketplace</li>
+                        <li><FormattedMessage
+                id='strcNftTitle'
+                value={{locale}}>
+                </FormattedMessage></li>
                         </Link>
                         <Link className='a' to="/Products/QuadOs">
                         <li>Quad Os</li>
@@ -82,7 +107,7 @@ const Footer = () => {
                       <a className='a' href="https://t.me/QuadriumCompany">
                           <FaTelegramPlane className='social-icon'/>
                       </a>
-                      <a className='a' href="">
+                      <a className='a' href="https://twitter.com/QuadriumCompany?t=mIO7GFMayEO0zIjLfbI8rw&s=09">
                           <BsTwitter className='social-icon'/>
                       </a>
                       <a className='a' href="">
@@ -90,7 +115,10 @@ const Footer = () => {
                       </a>
                     </div>
                   </div>
-                  <h4>All Rights Reserved<sup style={{fontSize:"20px"}}>&reg;</sup></h4>
+                  <h4><FormattedMessage
+                id='footerRights'
+                value={{locale}}>
+                </FormattedMessage><sup style={{fontSize:"20px"}}>&reg;</sup></h4>
                 </div>
     </>
   )
